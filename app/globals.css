@@ -10,6 +10,9 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   overflow-x: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* START: General styles */
@@ -34,7 +37,7 @@
 }
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-6 mt-6 rounded-3xl outline-none;
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
 }
 /* END: General styles */
 
@@ -79,7 +82,7 @@
 }
 
 .home__cars-wrapper {
-  @apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
+  @apply grid 2xl:grid-cols-5 xl:grid-cols-4 md:grid-cols-3 grid-cols-1 w-full gap-8 pt-14 mx-auto;
 }
 
 .home__error-container {
@@ -97,7 +100,7 @@
 }
 
 .car-card__content-title {
-  @apply text-[22px] leading-[26px] font-bold capitalize;
+  @apply text-[22px] leading-[30px] font-bold capitalize;
 }
 
 .car-card__price {
